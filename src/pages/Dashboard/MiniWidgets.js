@@ -7,7 +7,7 @@ class MiniWidgets extends Component {
             <React.Fragment>
                 {
                     this.props.reports.map((report, key) =>
-                                    <Col key={key} md={4}>
+                                    <Col key={key} md={3}>
                                         <Card>
                                             <CardBody>
                                                 <Media>

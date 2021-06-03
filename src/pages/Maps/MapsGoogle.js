@@ -44,7 +44,7 @@ class MapsGoogle extends Component {
           <Breadcrumbs title="Google Maps" breadcrumbItems={this.state.breadcrumbItems} />
 
             <Row>
-              <Col lg={6}>
+              <Col lg={12}>
                 <Card>
                   <CardBody>
                     <CardTitle>Markers</CardTitle>
@@ -57,14 +57,14 @@ class MapsGoogle extends Component {
                       <Map
                         google={this.props.google}
                         style={{ width: "100%", height: "100%" }}
-                        zoom={14}
+                        zoom={5}
                       >
                         <Marker
                           title={"The marker`s title will appear as a tooltip."}
-                          name={"SOMA"}
-                          position={{ lat: 37.778519, lng: -122.40564 }}
+                          name={"INDIA"}
+                          position={{ lat: 20.593683, lng: 78.962883 }}
                         />
-                        <Marker name={"Dolores park"} />
+                        {/* <Marker name={"Dolores park"} /> */}
                         <InfoWindow>
                           <div>
                             <h1>{this.state.selectedPlace.name}</h1>
@@ -76,7 +76,7 @@ class MapsGoogle extends Component {
                 </Card>
               </Col>
 
-              <Col lg={6}>
+              {/* <Col lg={6}>
                 <Card>
                   <CardBody>
                     <CardTitle>Overlays</CardTitle>
@@ -159,7 +159,7 @@ class MapsGoogle extends Component {
                     </div>
                   </CardBody>
                 </Card>
-              </Col>
+              </Col> */}
             </Row>
           </Container>
         </div>

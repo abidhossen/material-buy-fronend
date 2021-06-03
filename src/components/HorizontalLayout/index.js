@@ -61,8 +61,10 @@ class Layout extends Component {
     const title = this.props.location.pathname;
     let currentage = title.charAt(1).toUpperCase() + title.slice(2);
 
-    document.title =
-      currentage + " | Nazox - Responsive Bootstrap 4 Admin Dashboard";
+    // document.title =
+    //   currentage + " | Nazox - Responsive Bootstrap 4 Admin Dashboard";
+      document.title =
+      currentage + " | Material Buy";
 
     this.props.changeLayout('horizontal');
     if (this.props.topbarTheme) {

@@ -107,10 +107,9 @@ class Header extends Component {
 
                         <div className="navbar-brand-box">
                             <div>
-                                <div className="brand">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    <p>Material Buy</p>
-                                </div>
+                                <Link to="/">
+                                   <h4 className="mt-3" style={{color:"#fff"}}><i class="fas fa-shopping-cart"></i> <span className="ml-3">Material Buy</span> </h4>
+                                </Link>
                             </div>
                             {/* <Link to="#" className="logo logo-dark">
                                 <span className="logo-sm">
@@ -144,7 +143,7 @@ class Header extends Component {
                             </div>
                         </Form>
 
-                        <MegaMenu/>
+                        {/* <MegaMenu/> */}
                     </div>
 
                       <div className="d-flex">
@@ -171,7 +170,7 @@ class Header extends Component {
 
                         <LanguageDropdown/>
 
-                        <Dropdown isOpen={this.state.isSocialPf} toggle={() => this.setState({isSocialPf : !this.state.isSocialPf})} className="d-none d-lg-inline-block ml-1">
+                        {/* <Dropdown isOpen={this.state.isSocialPf} toggle={() => this.setState({isSocialPf : !this.state.isSocialPf})} className="d-none d-lg-inline-block ml-1">
                             <DropdownToggle tag="button" className="btn header-item noti-icon waves-effect">
                                 <i className="ri-apps-2-line"></i>
                             </DropdownToggle>
@@ -220,7 +219,7 @@ class Header extends Component {
                                     </Row>
                                 </div>
                             </DropdownMenu>
-                        </Dropdown>
+                        </Dropdown> */}
 
                         <div className="dropdown d-none d-lg-inline-block ml-1">
                             <Button color="none" type="button" className="header-item noti-icon waves-effect" onClick={this.toggleFullscreen}>
@@ -232,11 +231,11 @@ class Header extends Component {
 
                         <ProfileMenu/>
 
-                        <div className="dropdown d-inline-block">
+                        {/* <div className="dropdown d-inline-block">
                             <Button color="none" onClick={this.toggleRightbar} type="button" className="header-item noti-icon right-bar-toggle waves-effect">
                                 <i className="ri-settings-2-line"></i>
                             </Button>
-                        </div>
+                        </div> */}
             
                     </div>
                 </div>

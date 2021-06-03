@@ -17,7 +17,7 @@ class MegaMenu extends Component {
     render() {
         return (
             <React.Fragment>
-                        <Dropdown  className="dropdown-mega d-none d-lg-block ml-2" isOpen={this.state.megaMenu} toggle={() => { this.setState({ megaMenu: !this.state.megaMenu }) }}>
+                        {/* <Dropdown  className="dropdown-mega d-none d-lg-block ml-2" isOpen={this.state.megaMenu} toggle={() => { this.setState({ megaMenu: !this.state.megaMenu }) }}>
                             <DropdownToggle tag="button" type="button" caret className="btn header-item waves-effect">
                                 {this.props.t('Mega Menu')}{" "}
                                 <i className="mdi mdi-chevron-down"></i> 
@@ -146,7 +146,7 @@ class MegaMenu extends Component {
                                 </Row>
 
                             </DropdownMenu>
-                        </Dropdown>
+                        </Dropdown> */}
             </React.Fragment>
         );
     }

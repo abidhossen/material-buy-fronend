@@ -169,7 +169,7 @@ class ProductDetail extends Component {
 
                                                                 <h5 className="font-size-14">Specification :</h5>
                                                                 <ul className="list-unstyled product-desc-list">
-                                                                    <li><i className="mdi mdi-circle-medium mr-1 align-middle"></i> Full Sleeve</li>
+                                                                    <li><i className="-medium mr-1 align-middle"></i> Full Sleeve</li>
                                                                     <li><i className="mdi mdi-circle-medium mr-1 align-middle"></i> Cotton</li>
                                                                     <li><i className="mdi mdi-circle-medium mr-1 align-middle"></i> All Sizes available</li>
                                                                     <li><i className="mdi mdi-circle-medium mr-1 align-middle"></i> 4 Different Color</li>

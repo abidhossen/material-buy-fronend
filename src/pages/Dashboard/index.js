@@ -14,19 +14,21 @@ import RecentlyActivity from "./RecentlyActivity";
 import RevenueByLocations from "./RevenueByLocations";
 import ChatBox from "./ChatBox";
 import LatestTransactions from "./LatestTransactions";
+import CategoryGraph from "./CategoryGraph";
 
 class Dashboard extends Component {
     constructor(props) {
         super(props);
         this.state = {
             breadcrumbItems : [
-                { title : "Nazox", link : "#" },
+                { title : "Material Buy", link : "#" },
                 { title : "Dashboard", link : "#" },
             ],
             reports : [
-                { icon : "ri-stack-line", title : "Number of Sales", value : "1452", rate : "2.4%", desc : "From previous period" },
-                { icon : "ri-store-2-line", title : "Sales Revenue", value : "$ 38452", rate : "2.4%", desc : "From previous period" },
-                { icon : "ri-briefcase-4-line", title : "Average Price", value : "$ 15.4", rate : "2.4%", desc : "From previous period" },
+                { icon : "ri-user-line", title : "Customers", value : "1072", rate : "10%", desc : "From previous period" },
+                { icon : "ri-store-2-line", title : "Vendors", value : "452", rate : "5%", desc : "From previous period" },
+                { icon : "ri-stack-fill", title : "Products", value : "12146", rate : "30%", desc : "From previous period" },
+                { icon : "ri-money-dollar-circle-line", title : "Revenue", value : "$ 3315.4", rate : "8%", desc : "From previous period" }
             ]
         }
     }
@@ -39,48 +41,69 @@ class Dashboard extends Component {
 
                     <Breadcrumbs title="Dashboard" breadcrumbItems={this.state.breadcrumbItems} />
                         <Row>
-                            <Col xl={8}>
+                            <Col xl={12}>
                                 <Row>
                                     <MiniWidgets reports={this.state.reports} />
                                 </Row>
-                                
-                                {/* revenue Analytics */}
+                            </Col>
+                            {/* <Col xl={8}>
+                                Revenue Analytics
                                 <RevenueAnalytics/>
                             </Col>
-
                             <Col xl={4}>
 
-                                {/* sales Analytics */}
+                                Sales Analytics
                                 <SalesAnalytics/>
 
-                                {/* earning reports */}
+                                earning reports
                                 <EarningReports/>
 
-                            </Col>
+                            </Col> */}
+                            
+                           
                         </Row>
-                        
+                        <Row>
+                           
+                           <Col xl={8}>
+                                {/* Revenue Analytics */}
+                                <RevenueAnalytics/>
+                            </Col>
+                            <Col xl={4}>
+
+                            {/* Sales Analytics */}
+                                <SalesAnalytics/>
+
+                                {/* earning reports
+                                <EarningReports/> */}
+
+                            </Col>
+                          
+
+
+                        </Row>
 
                         <Row>
+                            <Col xl={7}>
+                            <CategoryGraph></CategoryGraph>
+                            </Col>
+                        
                             {/* sources */}
-                            <Sources/>
+                            {/* <Sources/> */}
 
                             {/* recent activity */}
-                            <RecentlyActivity/>
+                            {/* <RecentlyActivity/> */}
 
                             {/* revenue by locations */}
-                            <RevenueByLocations/>
-
+                            <Col xl={5}>
+                                <RevenueByLocations/>
+                            </Col>
                         </Row>
-                        
-
                         <Row>
-                            {/* chat box */}
-                            <ChatBox/>
-
-                            {/* latest transactions */}
                             <LatestTransactions/>
+                            {/* chat box */}
+                            {/* <ChatBox/> */}
+                            {/* latest transactions */}
                         </Row>
-
                     </Container> 
                 </div>
             </React.Fragment>

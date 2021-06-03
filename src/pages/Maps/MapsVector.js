@@ -43,7 +43,7 @@ class MapsVector extends Component {
                                         <p className="card-title-dsec">Example of world vector maps.</p>
                                         <div id="world-map-markers" style={{height:"420px"}}>
                                         <WorldVectorMap
-                                          value="world_mill"
+                                          value="asia_mill"
                                           width="500"
                                           color="#d4dadd"
                                         />

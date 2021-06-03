@@ -64,8 +64,10 @@ class Layout extends Component {
     window.scrollTo(0, 0);
     let currentage = this.capitalizeFirstLetter(this.props.location.pathname);
 
-    document.title =
-      currentage + " | Nazox - Responsive Bootstrap 4 Admin Dashboard";
+    // document.title =
+    //   currentage + " | Nazox - Responsive Bootstrap 4 Admin Dashboard";
+      document.title =
+      currentage + " | Material Buy";
     if (this.props.leftSideBarTheme) {
       this.props.changeSidebarTheme(this.props.leftSideBarTheme);
     }

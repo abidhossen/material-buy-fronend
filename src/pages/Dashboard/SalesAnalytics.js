@@ -13,7 +13,7 @@ class SalesAnalytics extends Component {
             plotOptions: {
                 pie: {
                     donut: {
-                        size: '75%'
+                        size: '65%'
                     }
                 }
             },
@@ -43,7 +43,7 @@ class SalesAnalytics extends Component {
                                         <h4 className="card-title mb-4">Sales Analytics</h4>
 
                                         <div id="donut-chart" className="apex-charts">
-                                        <ReactApexChart options={this.state.options} series={this.state.series} type="donut" height="230" />
+                                        <ReactApexChart options={this.state.options} series={this.state.series} type="donut" height="325" />
                                         </div>
 
                                         <Row>

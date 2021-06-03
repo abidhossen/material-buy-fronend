@@ -55,11 +55,12 @@ class Login extends Component {
                                         <div>
                                             <div className="text-center">
                                                 <div>
-                                                    <Link to="/" className="logo"><img src={logodark} height="20" alt="logo"/></Link>
+                                                    {/* <Link to="/" className="logo"><img src={logodark} height="20" alt="logo"/></Link> */}
+                                                    <h2><i class="fas fa-shopping-cart"></i> Material Buy</h2>
                                                 </div>
     
                                                 <h4 className="font-size-18 mt-4">Welcome Back !</h4>
-                                                <p className="text-muted">Sign in to continue to Nazox.</p>
+                                                <p className="text-muted">Sign in to continue to Material Buy.</p>
                                             </div>
 
                                            
@@ -97,7 +98,8 @@ class Login extends Component {
 
                                             <div className="mt-5 text-center">
                                                 <p>Don't have an account ? <Link to="/register" className="font-weight-medium text-primary"> Register </Link> </p>
-                                                <p>© 2020 Nazox. Crafted with <i className="mdi mdi-heart text-danger"></i> by Themesdesign</p>
+                                                {/* <p>© 2020 Nazox. Crafted with <i className="mdi mdi-heart text-danger"></i> by Themesdesign</p> */}
+                                                <p>© 2020 Material Buy. Developed by Orions IT</p>
                                             </div>
                                         </div>
 

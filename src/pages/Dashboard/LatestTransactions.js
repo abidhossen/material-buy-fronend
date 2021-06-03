@@ -168,7 +168,7 @@ class LatestTransactions extends Component {
       
         return (
             <React.Fragment>
-                            <Col lg={8}>
+                            <Col lg={12}>
                                 <Card>
                                     <CardBody>
                                         <Dropdown isOpen={this.state.menu} toggle={() => this.setState({menu : !this.state.menu})} className="float-right">

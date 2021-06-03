@@ -68,7 +68,7 @@ class LanguageDropdown extends Component {
                                     <img src={usFlag} alt="user" className="mr-1" height="12"/> <span className="align-middle">English</span>
                                 </DropdownItem>
 
-                                <DropdownItem href="" active={this.state.lng === "Spanish" ? true : false } onClick={() => this.changeLanguageAction('sp')} className="notify-item">
+                                {/* <DropdownItem href="" active={this.state.lng === "Spanish" ? true : false } onClick={() => this.changeLanguageAction('sp')} className="notify-item">
                                     <img src={spain} alt="user" className="mr-1" height="12"/> <span className="align-middle">Spanish</span>
                                 </DropdownItem>
 
@@ -82,7 +82,7 @@ class LanguageDropdown extends Component {
                                 
                                 <DropdownItem href="" active={this.state.lng === "Russian" ? true : false } onClick={() => this.changeLanguageAction('rs')} className=" notify-item">
                                     <img src={russia} alt="user" className="mr-1" height="12"/> <span className="align-middle">Russian</span>
-                                </DropdownItem>
+                                </DropdownItem> */}
                             </DropdownMenu>
                         </Dropdown>
       </React.Fragment>
